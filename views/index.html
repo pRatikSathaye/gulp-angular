@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html ng-app="angularTutorial">
+  <head>
+    <title>Integrating Angular with Node</title>
+    <script src="vendor/angular/angular.min.js"></script>
+    <script src="javascripts/app.js"></script>
+  </head>
+  <body>
+    <div ng-controller="myController">
+      <ul ng-repeat="item in data">
+        <li>Name: {{item.name}}, City: {{item.city}}</li>
+      </ul>
+    </div>
+  </body>
+</html>
