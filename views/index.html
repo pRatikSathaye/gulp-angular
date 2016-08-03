@@ -2,13 +2,15 @@
 <html ng-app="angularTutorial">
   <head>
     <title>Integrating Angular with Node</title>
+    <link rel="stylesheet" href="vendor/bootstrap-css-only/css/bootstrap.css" media="screen" title="no title" charset="utf-8">
+    <script src="vendor/angular-bootstrap/ui-bootstrap.min.js"></script>
     <script src="vendor/angular/angular.min.js"></script>
     <script src="javascripts/app.js"></script>
   </head>
   <body>
     <div ng-controller="myController">
-      <ul ng-repeat="item in data">
-        <li>Name: {{item.name}}, City: {{item.city}}</li>
+      <ul class="list-group" >
+        <li ng-repeat="item in data" class="list-group-item">Name: {{item.name}}, City: {{item.city}}</li>
       </ul>
     </div>
   </body>
